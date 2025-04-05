@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>DirectlyApply</title>
   </head>
   <body>
@@ -16,25 +20,60 @@
       </div>
       <div class="form-container">
         <form id="registration-form" action="#">
-          <label for="name">Username</label>
-          <input type="text" />
-          <label for="email">Email</label>
-          <input type="email" />
-          <label for="confirm-email">Confirm Email</label>
-          <input type="email" />
-          <label for="password">Password</label>
-          <input type="password" />
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" />
-          <label for="name">Where did you hear about us?</label>
-          <select name="source">
-            <option value="">--Please choose an option--</option>
-            <option value="dog">Google</option>
-            <option value="cat">Social media</option>
-            <option value="hamster">Blog article / news story</option>
-            <option value="parrot">Friend recommendation</option>
-            <option value="spider">Industry event</option>
-          </select>
+          <div class="form-control">
+            <label for="name">Username</label>
+            <input type="text" id="username" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="confirm-email">Confirm Email</label>
+            <input type="email" id="confirm-email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="name">Where did you hear about us?</label>
+            <select name="source" id="source">
+              <option value="">--Please choose an option--</option>
+              <option value="dog">Google</option>
+              <option value="cat">Social media</option>
+              <option value="hamster">Blog article / news story</option>
+              <option value="parrot">Friend recommendation</option>
+              <option value="spider">Industry event</option>
+            </select>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
           <button type="submit">Register</button>
         </form>
       </div>
