@@ -2,6 +2,8 @@
 
 A responsive registration form for DirectlyApply's job-seekers.
 
+**[View Live Demo: directlyform.netlify.app](https://directlyform.netlify.app)**
+
 ## Features
 
 - Form validation for all required fields
