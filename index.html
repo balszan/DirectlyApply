@@ -19,62 +19,102 @@
         <img src="assets/logo-white.svg" alt="DirectlyApply Logo" />
       </div>
       <div class="form-container">
+        <div class="header">
+          <h2>Lets match your resume to great jobs!</h2>
+          <h4>(free forever)</h4>
+        </div>
         <form id="registration-form" action="#">
+          <!-- Username field -->
+
           <div class="form-control">
-            <label for="name">Username</label>
-            <input type="text" id="username" />
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your username"
+              required
+            />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
           </div>
+
+          <!-- Email field -->
 
           <div class="form-control">
             <label for="email">Email</label>
-            <input type="email" id="email" />
+            <input
+              type="email"
+              id="email"
+              placeholder="example@gmail.com"
+              required
+            />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
           </div>
+
+          <!-- Confirm Email field -->
 
           <div class="form-control">
             <label for="confirm-email">Confirm Email</label>
-            <input type="email" id="confirm-email" />
+            <input
+              type="email"
+              id="confirm-email"
+              placeholder="Re-enter your email"
+              required
+            />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
           </div>
+
+          <!-- Password field -->
 
           <div class="form-control">
             <label for="password">Password</label>
-            <input type="password" id="password" />
+            <input
+              type="password"
+              id="password"
+              placeholder="Min. 8 characters with special char"
+              required
+            />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
           </div>
+
+          <!-- Confirm Password field -->
 
           <div class="form-control">
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" />
+            <input
+              type="password"
+              id="confirm-password"
+              placeholder="Re-enter your password"
+              required
+            />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
           </div>
 
+          <!-- Source field -->
+
           <div class="form-control">
             <label for="name">Where did you hear about us?</label>
-            <select name="source" id="source">
+            <select name="source" id="source" required>
               <option value="">--Please choose an option--</option>
               <option value="google">Google</option>
               <option value="social">Social media</option>
               <option value="blog">Blog article / news story</option>
               <option value="recommendation">Friend recommendation</option>
-              <option value="event">Industry event</option>
             </select>
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <small>Error message</small>
           </div>
-          <button type="submit" id="register">Register</button>
+          <button type="submit" id="register">Get Started</button>
         </form>
       </div>
     </div>

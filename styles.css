@@ -25,6 +25,12 @@ body {
   align-items: center;
 }
 
+.header {
+  color: white;
+  text-align: center;
+  line-height: 16px;
+}
+
 .logo-container img {
   width: 100%;
   height: auto;
@@ -33,7 +39,7 @@ body {
 .form-container {
   background-color: #312f3a;
   border-radius: 8px;
-  padding: 30px;
+  padding: 20px 30px 30px 30px;
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -130,7 +136,7 @@ button {
   align-self: center;
   width: auto;
   min-width: 120px;
-  color: white;
+  color: #1c1a25;
   border: none;
   border-radius: 4px;
   padding: 15px;
@@ -153,5 +159,6 @@ button:hover {
   select,
   button {
     padding: 10px;
+    height: 16px;
   }
 }

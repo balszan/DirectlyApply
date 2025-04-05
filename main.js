@@ -1,3 +1,12 @@
+/**
+ * DirectlyApply Registration Form
+ *
+ * This script handles form validation for the user registration process.
+ * It validates username, email, password and referral source.
+ */
+
+// DOM Element References
+
 const form = document.getElementById("registration-form")
 const username = document.getElementById("username")
 const email = document.getElementById("email")
@@ -6,19 +15,28 @@ const password = document.getElementById("password")
 const confirmPassword = document.getElementById("confirm-password")
 const source = document.getElementById("source")
 
+/**
+ * Form submission handler
+ * Prevents default form submission, validates inputs, and prepares user data
+ */
+
 form.addEventListener("submit", (e) => {
   e.preventDefault()
-  validateInputs()
-  const newUser = {
-    username: username.value.trim(),
-    email: email.value.trim(),
-    password: password.value.trim(),
-    source: source.value.trim(),
+  const isValid = validateInputs()
+
+  if (isValid) {
+    const newUser = {
+      username: username.value.trim(),
+      email: email.value.trim(),
+      password: password.value.trim(),
+      source: source.value.trim(),
+    }
+    console.log(newUser)
   }
-  console.log(newUser)
 })
 
 function validateInputs() {
+  // Gets all input values and trim whitespace
   const usernameValue = username.value.trim()
   const emailValue = email.value.trim()
   const confirmEmailValue = confirmEmail.value.trim()
@@ -100,9 +118,13 @@ function setSuccessFor(input) {
   formControl.className = "form-control success"
 }
 
+// Validates email format using regex
+
 function isEmail(email) {
   return /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/.test(email)
 }
+
+// Validates password format using regex
 
 function isValidPassword(password) {
   return /^(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?])(?=.*[a-zA-Z0-9]).{8,}$/.test(
