@@ -155,6 +155,10 @@ button:hover {
     padding: 20px;
   }
 
+  .header {
+    line-height: normal;
+  }
+
   input,
   select,
   button {
