@@ -6,33 +6,37 @@
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="normalize.css" />
-
     <title>DirectlyApply</title>
   </head>
   <body>
-    <div class="form-container">
-      <form id="registration-form">
-        <label for="name">Name</label>
-        <input type="text" />
-        <label for="name">Where did you hear about us?</label>
-        <select name="source">
-          <option value="">--Please choose an option--</option>
-          <option value="dog">Google</option>
-          <option value="cat">Social media</option>
-          <option value="hamster">Blog article / news story</option>
-          <option value="parrot">Friend recommendation</option>
-          <option value="spider">Industry event</option>
-        </select>
-        <label for="email">Email</label>
-        <input type="email" />
-        <label for="confirm-email">Confirm Email</label>
-        <input type="email" />
-        <label for="password">Password</label>
-        <input type="password" />
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" />
-        <button type="submit">Register</button>
-      </form>
+    <div class="container">
+      <div class="logo-container">
+        <img src="assets/logo-white.svg" alt="DirectlyApply Logo" />
+      </div>
+      <div class="form-container">
+        <form id="registration-form" action="#">
+          <label for="name">Name</label>
+          <input type="text" />
+          <label for="name">Where did you hear about us?</label>
+          <select name="source">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Google</option>
+            <option value="cat">Social media</option>
+            <option value="hamster">Blog article / news story</option>
+            <option value="parrot">Friend recommendation</option>
+            <option value="spider">Industry event</option>
+          </select>
+          <label for="email">Email</label>
+          <input type="email" />
+          <label for="confirm-email">Confirm Email</label>
+          <input type="email" />
+          <label for="password">Password</label>
+          <input type="password" />
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" />
+          <button type="submit">Register</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
