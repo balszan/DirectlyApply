@@ -9,6 +9,13 @@ const source = document.getElementById("source")
 form.addEventListener("submit", (e) => {
   e.preventDefault()
   validateInputs()
+  const newUser = {
+    username: username.value.trim(),
+    email: email.value.trim(),
+    password: password.value.trim(),
+    source: source.value.trim(),
+  }
+  console.log(newUser)
 })
 
 function validateInputs() {
@@ -20,6 +27,7 @@ function validateInputs() {
   const sourceValue = source.value.trim()
 
   // Username validation
+
   if (usernameValue === "") {
     setErrorFor(username, "Username cannot be empty")
   } else {
@@ -27,6 +35,7 @@ function validateInputs() {
   }
 
   // Email validation
+
   if (emailValue === "") {
     setErrorFor(email, "Email field cannot be empty")
   } else if (!isEmail(emailValue)) {
@@ -36,6 +45,7 @@ function validateInputs() {
   }
 
   // Confirm email validation
+
   if (confirmEmailValue === "") {
     setErrorFor(confirmEmail, "Email field cannot be empty")
   } else if (!isEmail(confirmEmailValue)) {
