@@ -43,3 +43,59 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+
+label {
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+button {
+  background-color: #facc14;
+  align-self: center;
+  width: auto;
+  min-width: 120px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #d08700;
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  input,
+  select,
+  button {
+    padding: 10px;
+  }
+}
